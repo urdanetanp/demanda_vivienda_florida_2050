@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perspectivas de Crecimiento y Demanda de Vivienda Unifamiliar en Florida (2025-2050)</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+        .bg-dark {
+            background-color: #121212;
+        }
+        
+        .bg-dark-secondary {
+            background-color: #1e1e1e;
+        }
+        
+        .text-primary {
+            color: #3498db;
+        }
+        
+        .border-primary {
+            border-color: #3498db;
+        }
+        
+        .bg-primary {
+            background-color: #3498db;
+        }
+        
+        .gradient-header {
+            background: linear-gradient(90deg, #121212 0%, #1a1a2e 100%);
+        }
+        
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #3498db;
+            transform: translateY(-2px);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: #3498db;
+        }
+        
+        .card {
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .data-stat {
+            transition: all 0.3s ease;
+        }
+        
+        .data-stat:hover {
+            transform: scale(1.05);
+        }
+        
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 12px;
+            border: 1px solid #333;
+        }
+        
+        th {
+            background-color: #1e1e1e;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #1a1a1a;
+        }
+        
+        tr:hover {
+            background-color: #252525;
+        }
+        
+        .metro-card {
+            background-color: #1e1e1e;
+            border-left: 4px solid #3498db;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-dark">
+    <!-- Header -->
+    <header class="gradient-header py-16 px-4 md:px-8">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">Perspectivas de Crecimiento y Demanda de Vivienda Unifamiliar</h1>
+            <h2 class="text-2xl md:text-3xl text-primary font-medium">Florida (2025-2050)</h2>
+            <p class="mt-6 text-gray-300 max-w-3xl mx-auto">Análisis detallado de las áreas metropolitanas con mayor potencial para el crecimiento sostenido de la demanda de viviendas unifamiliares en Florida durante los próximos 25 años</p>
+            <p class="mt-4 text-sm text-gray-400">Fecha de publicación: 14 de mayo de 2025</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-dark-secondary py-4 px-4 md:px-8 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex flex-wrap justify-center">
+            <a href="#resumen" class="nav-link px-4 py-2 mx-2 text-gray-300 hover:text-primary">Resumen Ejecutivo</a>
+            <a href="#metodologia" class="nav-link px-4 py-2 mx-2 text-gray-300 hover:text-primary">Metodología</a>
+            <a href="#areas" class="nav-link px-4 py-2 mx-2 text-gray-300 hover:text-primary">Áreas Metropolitanas</a>
+            <a href="#factores" class="nav-link px-4 py-2 mx-2 text-gray-300 hover:text-primary">Factores Considerados</a>
+            <a href="#tendencias" class="nav-link px-4 py-2 mx-2 text-gray-300 hover:text-primary">Tendencias</a>
+            <a href="#recomendaciones" class="nav-link px-4 py-2 mx-2 text-gray-300 hover:text-primary">Recomendaciones</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 md:px-8 py-8">
+        <!-- Resumen Ejecutivo Section -->
+        <section id="resumen" class="mb-20 fade-in">
+            <h2 class="text-3xl font-bold section-title text-primary mb-8">Resumen Ejecutivo</h2>
+            <div class="bg-dark-secondary p-6 rounded-lg shadow-lg">
+                <p class="mb-4">Este informe identifica y analiza las ciudades y áreas metropolitanas dentro del estado de Florida que presentan las perspectivas más sólidas de crecimiento demográfico y económico sostenido durante los próximos 20 a 25 años. Se evalúa cómo este crecimiento se traducirá en una alta demanda de viviendas unifamiliares, considerando factores como proyecciones demográficas, impulsores económicos, tendencias de preferencia de vivienda, potencial de desarrollo, planes de infraestructura y consideraciones de resiliencia y asequibilidad a largo plazo.</p>
+                
+                <p class="mb-4">Tras un análisis detallado de múltiples factores, se han identificado las siguientes áreas metropolitanas como las que presentan las perspectivas más sólidas para el crecimiento sostenido de la demanda de viviendas unifamiliares en Florida durante los próximos 20 a 25 años:</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+                    <div class="bg-dark p-6 rounded-lg shadow-md border-l-4 border-primary text-center data-stat">
+                        <i class="fas fa-building text-primary text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Orlando MSA</h3>
+                        <p class="text-gray-400">Condados de Orange, Osceola y Lake</p>
+                    </div>
+                    <div class="bg-dark p-6 rounded-lg shadow-md border-l-4 border-primary text-center data-stat">
+                        <i class="fas fa-city text-primary text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Tampa-St. Petersburg</h3>
+                        <p class="text-gray-400">Condados de Hillsborough y Pasco</p>
+                    </div>
+                    <div class="bg-dark p-6 rounded-lg shadow-md border-l-4 border-primary text-center data-stat">
+                        <i class="fas fa-water text-primary text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Jacksonville</h3>
+                        <p class="text-gray-400">Condados de St. Johns y Nassau</p>
+                    </div>
+                    <div class="bg-dark p-6 rounded-lg shadow-md border-l-4 border-primary text-center data-stat">
+                        <i class="fas fa-warehouse text-primary text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Lakeland-Winter Haven</h3>
+                        <p class="text-gray-400">Condado de Polk</p>
+                    </div>
+                </div>
+                
+                <div class="mt-8">
+                    <p>Estas áreas se destacan por su fuerte crecimiento poblacional proyectado, diversificación económica, disponibilidad de terrenos para desarrollo, planes robustos de infraestructura y consideraciones de resiliencia climática favorables en comparación con otras regiones del estado.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Metodología Section -->
+        <section id="metodologia" class="mb-20 fade-in">
+            <h2 class="text-3xl font-bold section-title text-primary mb-8">Metodología de Investigación</h2>
+            <div class="bg-dark-secondary p-6 rounded-lg shadow-lg">
+                <p class="mb-6">La metodología empleada para este informe se basa en un análisis multifactorial que integra datos cuantitativos y cualitativos de diversas fuentes. Los pasos clave incluyen:</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-6 bg-dark rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-3 text-primary"><i class="fas fa-chart-line mr-2"></i>Análisis de Proyecciones Demográficas</h3>
+                        <p>Utilización de proyecciones de crecimiento poblacional a nivel de condado del Bureau of Economic and Business Research (BEBR) de la Universidad de Florida, con un horizonte hasta 2050. Identificación de áreas metropolitanas (MSAs) y centros urbanos dentro de los condados de mayor crecimiento.</p>
+                    </div>
+                    
+                    <div class="p-6 bg-dark rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-3 text-primary"><i class="fas fa-dollar-sign mr-2"></i>Evaluación de Factores Económicos</h3>
+                        <p>Investigación de previsiones económicas para las MSAs identificadas, análisis de impulsores económicos futuros (sectores como tecnología, salud, logística), diversificación económica, proyecciones de crecimiento del empleo y niveles de ingresos.</p>
+                    </div>
+                    
+                    <div class="p-6 bg-dark rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-3 text-primary"><i class="fas fa-home mr-2"></i>Proyección de la Demanda de Vivienda</h3>
+                        <p>Análisis de cómo las tendencias demográficas y económicas influirán en la demanda específica de viviendas unifamiliares. Investigación de preferencias de vivienda de nuevos residentes (familias, teletrabajadores, jubilados).</p>
+                    </div>
+                    
+                    <div class="p-6 bg-dark rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-3 text-primary"><i class="fas fa-map-marked-alt mr-2"></i>Análisis del Potencial de Desarrollo</h3>
+                        <p>Investigación de la disponibilidad de terrenos, planes de desarrollo urbano y territorial, y grandes desarrollos urbanísticos planificados (Master-Planned Communities, MPCs).</p>
+                    </div>
+                    
+                    <div class="p-6 bg-dark rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-3 text-primary"><i class="fas fa-road mr-2"></i>Análisis de Infraestructura</h3>
+                        <p>Investigación de planes de inversión en infraestructura (transporte, servicios públicos, escuelas, parques) y su capacidad para soportar el crecimiento.</p>
+                    </div>
+                    
+                    <div class="p-6 bg-dark rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-3 text-primary"><i class="fas fa-cloud-sun mr-2"></i>Consideraciones de Resiliencia</h3>
+                        <p>Evaluación de la resiliencia climática, costos de seguro y asequibilidad de la vivienda a largo plazo.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-8">
+                    <img src="https://planhillsborough.org/wp-content/uploads/2023/07/Chart_1_TBR-Counties-BEBR-Published-2023.png" alt="Proyecciones de crecimiento poblacional de condados de Florida" class="mx-auto max-w-full h-auto rounded-lg shadow-lg">
+                    <p class="text-sm text-gray-400 text-center mt-2">Proyecciones de crecimiento poblacional por condados de Florida hasta 2050 (BEBR).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Áreas Metropolitanas Section -->
+        <section id="areas" class="mb-20 fade-in">
+            <h2 class="text-3xl font-bold section-title text-primary mb-8">Áreas Metropolitanas con Mayor Potencial</h2>
+            
+            <!-- MSA Orlando -->
+            <div class="mb-12 metro-card p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">1. MSA de Orlando</h3>
+                <div class="flex flex-col lg:flex-row">
+                    <div class="lg:w-1/2 pr-0 lg:pr-6 mb-6 lg:mb-0">
+                        <p class="mb-4"><strong class="text-primary">Condados destacados:</strong> Orange, Osceola y Lake</p>
+                        
+                        <h4 class="text-xl font-semibold mb-3 text-primary">Fortalezas:</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-6 text-gray-300">
+                            <li>Crecimiento poblacional proyectado excepcionalmente alto: Orange +386,400; Osceola +226,000 (~48%); Lake +154,300 (~35%) habitantes para 2050</li>
+                            <li>Economía diversificada más allá del turismo hacia sectores robustos como tecnología, atención médica avanzada, simulación y logística</li>
+                            <li>Considerable disponibilidad de terrenos en grandes comunidades planificadas (MPCs) como Lake Nona, Horizon West y Sunbridge</li>
+                            <li>Planes de infraestructura coordinados a través de MetroPlan Orlando</li>
+                            <li>Como región interior, enfrenta menores riesgos directos de huracanes y costos de seguro más bajos que las zonas costeras</li>
+                        </ul>
+                        
+                        <div class="bg-dark p-4 rounded-lg shadow-md">
+                            <h5 class="font-semibold mb-2">Datos económicos destacables:</h5>
+                            <p>Economía superior a $200 mil millones</p>
+                            <p>En 2024 la región agregó 37,500 empleos, liderando entre las 30 regiones más pobladas de EE.UU.</p>
+                            <p>Ingreso per cápita en la MSA: $57,774 (2023)</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <img src="https://lakenona.com/wp-content/uploads/2023/08/July-2023_Medical-City-Aerial_Horizontal-Retouched.jpg" alt="Lake Nona Medical City en Orlando" class="rounded-lg shadow-lg w-full h-auto mb-4">
+                        <p class="text-sm text-gray-400 text-center">Lake Nona Medical City, uno de los desarrollos planificados con mayor crecimiento en la MSA de Orlando.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MSA Tampa -->
+            <div class="mb-12 metro-card p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">2. MSA de Tampa-St. Petersburg-Clearwater</h3>
+                <div class="flex flex-col lg:flex-row">
+                    <div class="lg:w-1/2 pr-0 lg:pr-6 mb-6 lg:mb-0">
+                        <p class="mb-4"><strong class="text-primary">Condados destacados:</strong> Hillsborough y Pasco</p>
+                        
+                        <h4 class="text-xl font-semibold mb-3 text-primary">Fortalezas:</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-6 text-gray-300">
+                            <li>Fuerte crecimiento poblacional proyectado: Hillsborough +369,500 (~23%); Pasco +202,900 (~32%) habitantes para 2050</li>
+                            <li>Economía diversa con fortalezas en servicios financieros, tecnología, atención médica y logística portuaria</li>
+                            <li>MPCs significativas con planes de desarrollo a largo plazo en Pasco y Hillsborough (Bexley, Epperson, Connerton)</li>
+                            <li>Planes de infraestructura a través de los MPOs de Hillsborough y Pasco orientados a gestionar el crecimiento</li>
+                            <li>Las áreas interiores ofrecen menor riesgo de seguro en comparación con las zonas costeras</li>
+                        </ul>
+                        
+                        <div class="bg-dark p-4 rounded-lg shadow-md">
+                            <h5 class="font-semibold mb-2">Desarrollo destacado:</h5>
+                            <p>Las comunidades planificadas en el condado de Pasco están experimentando un crecimiento acelerado, posicionándolo como uno de los condados con mayor expansión en Florida</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <img src="https://images.axios.com/qtDUx6_QuP7rP-q1NJrofu8Nm3w=/0x0:5458x3070/1920x1080/2025/01/09/1736454678358.jpg" alt="Desarrollo en Pasco County" class="rounded-lg shadow-lg w-full h-auto mb-4">
+                        <p class="text-sm text-gray-400 text-center">El condado de Pasco se posiciona entre los de más rápido crecimiento en Florida.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MSA Jacksonville -->
+            <div class="mb-12 metro-card p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">3. MSA de Jacksonville</h3>
+                <div class="flex flex-col lg:flex-row">
+                    <div class="lg:w-1/2 pr-0 lg:pr-6 mb-6 lg:mb-0">
+                        <p class="mb-4"><strong class="text-primary">Condados destacados:</strong> St. Johns y Nassau</p>
+                        
+                        <h4 class="text-xl font-semibold mb-3 text-primary">Fortalezas:</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-6 text-gray-300">
+                            <li>St. Johns y Nassau se encuentran entre los condados de más rápido crecimiento porcentual en Florida: St. Johns +176,500 (~52%); Nassau ~38% para 2050</li>
+                            <li>Economía en fortalecimiento en logística (JAXPORT), servicios financieros, atención médica avanzada y manufactura</li>
+                            <li>MPCs de gran escala como Nocatee (St. Johns) y Wildlight (Nassau) con inventario significativo de terrenos</li>
+                            <li>Planes de desarrollo e infraestructura diseñados para el crecimiento sostenido</li>
+                            <li>St. Johns County es conocido por sus excelentes escuelas, un gran atractivo para familias</li>
+                        </ul>
+                        
+                        <div class="bg-dark p-4 rounded-lg shadow-md">
+                            <h5 class="font-semibold mb-2">Comunidad destacada:</h5>
+                            <p>Nocatee en St. Johns County es clasificada como la 5ª comunidad planificada de más rápido crecimiento en América</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <img src="https://bringyouhome.com/images/nocatee/Nocatee.jpg" alt="Comunidad Nocatee en St. Johns County" class="rounded-lg shadow-lg w-full h-auto mb-4">
+                        <p class="text-sm text-gray-400 text-center">Nocatee, una de las comunidades planificadas de mayor éxito en la MSA de Jacksonville.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MSA Lakeland -->
+            <div class="mb-12 metro-card p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">4. MSA de Lakeland-Winter Haven</h3>
+                <div class="flex flex-col lg:flex-row">
+                    <div class="lg:w-1/2 pr-0 lg:pr-6 mb-6 lg:mb-0">
+                        <p class="mb-4"><strong class="text-primary">Condado destacado:</strong> Polk</p>
+                        
+                        <h4 class="text-xl font-semibold mb-3 text-primary">Fortalezas:</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-6 text-gray-300">
+                            <li>Polk County muestra una de las proyecciones de crecimiento poblacional más altas: +271,000 (~33%) habitantes para 2050</li>
+                            <li>Ubicación estratégica en el corredor I-4 entre Orlando y Tampa lo convierte en un centro logístico y de distribución en expansión</li>
+                            <li>Considerable disponibilidad de terrenos y surgimiento de nuevas MPCs</li>
+                            <li>Mayor asequibilidad de la vivienda en comparación con MSAs costeras y Orlando/Tampa</li>
+                            <li>Como región interior, tiene menores riesgos climáticos directos y costos de seguro más bajos</li>
+                        </ul>
+                        
+                        <div class="bg-dark p-4 rounded-lg shadow-md">
+                            <h5 class="font-semibold mb-2">Ventaja económica:</h5>
+                            <p>El sector logístico en expansión está impulsando el crecimiento del empleo, atrayendo a residentes que buscan oportunidades laborales y viviendas asequibles</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <img src="https://www.theorlandoreal.com/uploads/agent-1/Real%20Estate/Polk%20County/DJI_0348.jpg" alt="Desarrollo residencial en Polk County" class="rounded-lg shadow-lg w-full h-auto mb-4">
+                        <p class="text-sm text-gray-400 text-center">El desarrollo residencial en Polk County está en auge gracias a su ubicación estratégica entre Orlando y Tampa.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tabla Comparativa -->
+            <div class="overflow-x-auto">
+                <table class="w-full mt-8">
+                    <thead>
+                        <tr>
+                            <th>Área Metropolitana</th>
+                            <th>Crecimiento Poblacional 2023-2050</th>
+                            <th>Sectores Económicos</th>
+                            <th>Disponibilidad de Terrenos</th>
+                            <th>Asequibilidad Relativa</th>
+                            <th>Riesgo Climático</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MSA Orlando</td>
+                            <td>+838,300 residentes<br>Osceola: ~48%, Lake: ~35%</td>
+                            <td>Tecnología, salud avanzada, simulación, logística, turismo</td>
+                            <td>Alta (grandes MPCs)</td>
+                            <td>Media</td>
+                            <td>Bajo-Medio</td>
+                        </tr>
+                        <tr>
+                            <td>MSA Tampa-St. Pete</td>
+                            <td>+572,400 residentes<br>Pasco: ~32%, Hillsborough: ~23%</td>
+                            <td>Servicios financieros, tecnología, salud, logística portuaria</td>
+                            <td>Alta (interior), Baja (costa)</td>
+                            <td>Media</td>
+                            <td>Bajo-Alto (varía por ubicación)</td>
+                        </tr>
+                        <tr>
+                            <td>MSA Jacksonville</td>
+                            <td>+436,800 residentes<br>St. Johns: ~52%, Nassau: ~38%</td>
+                            <td>Logística/JAXPORT, servicios financieros, salud avanzada, manufactura</td>
+                            <td>Alta (MPCs activas)</td>
+                            <td>Media-Alta</td>
+                            <td>Bajo-Alto (varía por ubicación)</td>
+                        </tr>
+                        <tr>
+                            <td>MSA Lakeland</td>
+                            <td>+271,000 residentes<br>Polk: ~33%</td>
+                            <td>Logística, agroindustria, manufactura, salud</td>
+                            <td>Alta</td>
+                            <td>Alta</td>
+                            <td>Bajo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <!-- Factores Considerados Section -->
+        <section id="factores" class="mb-20 fade-in">
+            <h2 class="text-3xl font-bold section-title text-primary mb-8">Factores Considerados en el Análisis</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-dark-secondary p-6 rounded-lg shadow-lg">
+                    <div class="rounded-full bg-primary bg-opacity-20 p-4 inline-block mb-4">
+                        <i class="fas fa-users text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Proyecciones Demográficas</h3>
+                    <p>Análisis de proyecciones del BEBR hasta 2050, evaluando tanto el crecimiento absoluto como porcentual por condado y MSA. Identificación de patrones migratorios internos y externos hacia Florida.</p>
+                    <p class="mt-3 text-primary">Dato clave: Florida proyecta sumar más de 3.8 millones de residentes entre 2023 y 2050.</p>
+                </div>
+                
+                <div class="bg-dark-secondary p-6 rounded-lg shadow-lg">
+                    <div class="rounded-full bg-primary bg-opacity-20 p-4 inline-block mb-4">
+                        <i class="fas fa-chart-line text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Factores Económicos</h3>
+                    <p>Evaluación de la diversificación económica, impulsores de crecimiento futuros, proyecciones de empleo y niveles de ingresos por MSA. Análisis del impacto de las tendencias de trabajo remoto.</p>
+                    <p class="mt-3 text-primary">Dato clave: Las MSAs con mayor diversificación económica muestran mayor resiliencia frente a recesiones.</p>
+                </div>
+                
+                <div class="bg-dark-secondary p-6 rounded-lg shadow-lg">
+                    <div class="rounded-full bg-primary bg-opacity-20 p-4 inline-block mb-4">
+                        <i class="fas fa-home text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Demanda de Vivienda</h3>
+                    <p>Análisis de tendencias en preferencias de vivienda por segmento demográfico, proyecciones de formación de hogares y estimaciones de unidades necesarias por área.</p>
+                    <p class="mt-3 text-primary">Dato clave: El 31% de los encuestados planea comprar una vivienda en los próximos 3-5 años.</p>
+                </div>
+                
+                <div class="bg-dark-secondary p-6 rounded-lg shadow-lg">
+                    <div class="rounded-full bg-primary bg-opacity-20 p-4 inline-block mb-4">
+                        <i class="fas fa-map-marked-alt text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Potencial de Desarrollo</h3>
+                    <p>Evaluación de la disponibilidad de terrenos, planes de zonificación y desarrollo territorial, grandes proyectos de MPCs planificadas y entornos regulatorios locales.</p>
+                    <p class="mt-3 text-primary">Dato clave: Las MPCs representan más del 30% del desarrollo residencial nuevo en las áreas seleccionadas.</p>
+                </div>
+                
+                <div class="bg-dark-secondary p-6 rounded-lg shadow-lg">
+                    <div class="rounded-full bg-primary bg-opacity-20 p-4 inline-block mb-4">
+                        <i class="fas fa-road text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Infraestructura</h3>
+                    <p>Análisis de planes de inversión en transporte, servicios públicos, escuelas y espacios comunitarios. Evaluación de la capacidad para soportar el crecimiento proyectado.</p>
+                    <p class="mt-3 text-primary">Dato clave: Los planes MetroPlan Orlando 2050 y los LRTP priorizan la expansión de infraestructura para acomodar el crecimiento.</p>
+                </div>
+                
+                <div class="bg-dark-secondary p-6 rounded-lg shadow-lg">
+                    <div class="rounded-full bg-primary bg-opacity-20 p-4 inline-block mb-4">
+                        <i class="fas fa-cloud-sun text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Resiliencia y Asequibilidad</h3>
+                    <p>Evaluación de riesgos climáticos (inundaciones, huracanes), costos de seguro proyectados y tendencias de asequibilidad a largo plazo por área geográfica.</p>
+                    <p class="mt-3 text-primary">Dato clave: Prima anual de seguro en Orlando (~$3,000) vs. zonas costeras (~$5,800) para una cobertura de $300,000.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Tendencias y Preferencias Section -->
+        <section id="tendencias" class="mb-20 fade-in">
+            <h2 class="text-3xl font-bold section-title text-primary mb-8">Tendencias y Preferencias de Vivienda Unifamiliar</h2>
+            
+            <div class="bg-dark-secondary p-8 rounded-lg shadow-lg">
+                <p class="mb-6">El análisis de las tendencias actuales y proyectadas del mercado inmobiliario revela patrones claros en las preferencias de vivienda unifamiliar, diferenciados por segmentos demográficos clave:</p>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="bg-dark p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="rounded-full bg-primary bg-opacity-20 p-3 mr-4">
+                                <i class="fas fa-baby text-primary text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Familias Jóvenes y Millennials</h3>
+                        </div>
+                        <ul class="list-disc list-inside space-y-2 text-gray-300">
+                            <li>Preferencia por viviendas unifamiliares con espacio adicional y patios</li>
+                            <li>Tamaño promedio preferido: 2,408 pies cuadrados</li>
+                            <li>Alta valoración de buenos distritos escolares</li>
+                            <li>Migración notable hacia condados suburbanos</li>
+                            <li>Priorización de calidad sobre tamaño</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-dark p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="rounded-full bg-primary bg-opacity-20 p-3 mr-4">
+                                <i class="fas fa-laptop-house text-primary text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Profesionales Remotos</h3>
+                        </div>
+                        <ul class="list-disc list-inside space-y-2 text-gray-300">
+                            <li>Demanda de viviendas más grandes con espacios dedicados para oficinas</li>
+                            <li>Preferencia por áreas suburbanas con buena conectividad</li>
+                            <li>Atracción hacia Florida por el estilo de vida y ventajas fiscales</li>
+                            <li>Orlando destacada como destino atractivo para teletrabajadores</li>
+                            <li>Valoración de comunidades con amenidades recreativas</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-dark p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="rounded-full bg-primary bg-opacity-20 p-3 mr-4">
+                                <i class="fas fa-umbrella-beach text-primary text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Jubilados</h3>
+                        </div>
+                        <ul class="list-disc list-inside space-y-2 text-gray-300">
+                            <li>Preferencia por la privacidad y espacio de una casa unifamiliar</li>
+                            <li>Interés en comunidades planificadas para adultos activos</li>
+                            <li>Condados como Lake y Osceola son populares entre jubilados</li>
+                            <li>Búsqueda de diseños de una sola planta y mantenimiento reducido</li>
+                            <li>Valoración de proximidad a servicios médicos</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-8 p-6 bg-dark rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold mb-4 text-primary">Tendencias Generales del Mercado</h4>
+                    <ul class="list-disc list-inside space-y-3 text-gray-300">
+                        <li>A pesar del aumento en construcción multifamiliar, la vivienda unifamiliar sigue siendo una aspiración para muchos compradores</li>
+                        <li>Fuerte disposición a pagar más por una hipoteca que por el alquiler actual para ser propietario de una vivienda</li>
+                        <li>31% de los encuestados espera comprar una casa en los próximos 3 a 5 años</li>
+                        <li>La demanda es impulsada por necesidad de más espacio habitable, tanto interior como exterior</li>
+                        <li>Sectores como tecnología y atención médica atraen a profesionales con los medios y el deseo de adquirir viviendas unifamiliares</li>
+                        <li>Creciente interés en diseños que incorporen sostenibilidad y eficiencia energética</li>
+                    </ul>
+                </div>
+                
+                <div class="mt-8">
+                    <p>Estas preferencias están moldeando el desarrollo inmobiliario en las MSAs seleccionadas, con proyectos que adaptan sus diseños y ofertas para satisfacer las demandas específicas de estos segmentos de mercado.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Recomendaciones Section -->
+        <section id="recomendaciones" class="mb-20 fade-in">
+            <h2 class="text-3xl font-bold section-title text-primary mb-8">Recomendaciones Estratégicas</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-dark-secondary p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="rounded-full bg-primary bg-opacity-20 p-4 mr-4">
+                            <i class="fas fa-hard-hat text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold">Para Desarrolladores</h3>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-dark p-5 rounded-lg shadow-md">
+                            <h4 class="text-lg font-semibold mb-2 text-primary">Enfoque Geográfico</h4>
+                            <p>Priorizar inversiones en las MSAs identificadas, particularmente en los corredores de crecimiento y dentro o cerca de MPCs con planes de expansión a largo plazo y disponibilidad de terrenos.</p>
+                        </div>
+                        
+                        <div class="bg-dark p-5 rounded-lg shadow-md">
+                            <h4 class="text-lg font-semibold mb-2 text-primary">Diversificación de Producto</h4>
+                            <p>Ofrecer una variedad de modelos de viviendas unifamiliares que atiendan a diferentes segmentos del mercado (ej. viviendas de entrada, para familias en crecimiento, para adultos activos) y rangos de precios. Considerar diseños que incluyan espacios flexibles para el trabajo remoto.</p>
+                        </div>
+                        
+                        <div class="bg-dark p-5 rounded-lg shadow-md">
+                            <h4 class="text-lg font-semibold mb-2 text-primary">Construcción Resiliente</h4>
+                            <p>Incorporar principios de diseño y construcción resilientes al clima para mitigar los riesgos y potencialmente reducir los costos de seguro para los propietarios.</p>
+                        </div>
+                        
+                        <div class="bg-dark p-5 rounded-lg shadow-md">
+                            <h4 class="text-lg font-semibold mb-2 text-primary">Colaboración</h4>
+                            <p>Trabajar en estrecha colaboración con los gobiernos locales y los distritos escolares para asegurar la alineación con los planes de infraestructura y servicios.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-dark-secondary p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="rounded-full bg-primary bg-opacity-20 p-4 mr-4">
+                            <i class="fas fa-chart-pie text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold">Para Inversores</h3>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-dark p-5 rounded-lg shadow-md">
+                            <h4 class="text-lg font-semibold mb-2 text-primary">Identificación de Submercados</h4>
+                            <p>Dentro de las MSAs seleccionadas, identificar submercados específicos con el mayor potencial de apreciación y demanda de alquiler de viviendas unifamiliares, considerando la proximidad a centros de empleo, buenas escuelas y servicios.</p>
+                        </div>
+                        
+                        <div class="bg-dark p-5 rounded-lg shadow-md">
+                            <h4 class="text-lg font-semibold mb-2 text-primary">Evaluación de Riesgos</h4>
+                            <p>Realizar una debida diligencia exhaustiva sobre los riesgos climáticos (inundaciones, vientos huracanados) y los costos de seguro asociados a nivel de propiedad.</p>
+                        </div>
+                        
+                        <div class="bg-dark p-5 rounded-lg shadow-md">
+                            <h4 class="text-lg font-semibold mb-2 text-primary">Horizonte a Largo Plazo</h4>
+                            <p>Dada la naturaleza de las proyecciones, adoptar un enfoque de inversión a largo plazo para maximizar los retornos a medida que las áreas identificadas se desarrollan plenamente.</p>
+                        </div>
+                        
+                        <div class="bg-dark p-5 rounded-lg shadow-md">
+                            <h4 class="text-lg font-semibold mb-2 text-primary">Diversificación por MSA</h4>
+                            <p>Considerar la distribución de inversiones entre las diferentes MSAs recomendadas para reducir la exposición a riesgos específicos de una sola región.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-10 bg-dark-secondary p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-6 text-primary">Consideraciones Finales</h3>
+                
+                <p class="mb-4">Este informe proporciona una visión integral de las áreas metropolitanas de Florida que ofrecen las mejores perspectivas para el crecimiento sostenido de la demanda de viviendas unifamiliares hasta 2050. Sin embargo, es importante considerar que:</p>
+                
+                <ul class="list-disc list-inside space-y-3 text-gray-300 mb-6">
+                    <li>Las proyecciones a largo plazo están sujetas a incertidumbres, incluidos cambios en las tendencias económicas, políticas gubernamentales y eventos climáticos.</li>
+                    <li>La asequibilidad de la vivienda será un desafío creciente que requerirá soluciones innovadoras por parte de desarrolladores y formuladores de políticas.</li>
+                    <li>Los efectos del cambio climático pueden alterar los patrones de desarrollo en algunas áreas costeras.</li>
+                    <li>Las inversiones en infraestructura serán críticas para mantener la calidad de vida a medida que las poblaciones crecen.</li>
+                </ul>
+                
+                <p>A pesar de estos desafíos, las MSAs identificadas muestran fundamentos sólidos que sustentan su potencial para un crecimiento sostenido y una fuerte demanda de viviendas unifamiliares durante las próximas décadas. Los desarrolladores e inversores que se posicionen estratégicamente en estas áreas estarán bien situados para capitalizar las oportunidades que presentará el mercado inmobiliario de Florida hasta 2050.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-secondary text-gray-400 py-10 px-4 md:px-8">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-semibold text-white mb-2">Perspectivas de Crecimiento y Demanda de Vivienda Unifamiliar en Florida</h3>
+                    <p>Fecha de publicación: 14 de mayo de 2025</p>
+                </div>
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-sm">&copy; 2025. Todos los derechos reservados.</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-gray-700 text-sm text-center">
+                <p>Este informe ha sido preparado con fines informativos y no constituye asesoramiento de inversión. Las proyecciones presentadas están basadas en datos disponibles a la fecha de publicación y están sujetas a cambios.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
